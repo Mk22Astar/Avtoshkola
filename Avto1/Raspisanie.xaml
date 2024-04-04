@@ -1,0 +1,16 @@
+﻿<Window x:Class="Avto1.Raspisanie"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Avto1"
+        mc:Ignorable="d"
+        Title="Raspisanie" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="34,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="63"><Run Language="ru-ru" Text="ФИО"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="34,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="63" Text="idgruppi"/>
+        <TextBlock HorizontalAlignment="Left" Margin="34,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="108"><Run Language="ru-ru" Text="Расписание"/></TextBlock>
+        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="34,171,22,24" SelectionChanged="DataGrid_SelectionChanged"/>
+
+    </Grid>
+</Window>
